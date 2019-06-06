@@ -1,11 +1,10 @@
 {
-    "1": {"name":"Wanderer","content": "Where is everyone"},
-    "2": {"name":"Muley Graves","content":"Gone. Everybody. Gone. Nothin' left. Just me. An' you, I guess."},
-    "3": {"name":"Wanderer","content":"Where they gone off to?"},
-    "4": {"name":"Muley Graves","content":"California. Out West. Herded like sheep I say. Herded like sheep"},
-    "5": {"name":"Wanderer","content":"Don't blame 'em. This place don't exactly look like paradise."},
-    "6": {"name":"Muley Graves","content":"Dust comin' up an' spoilin' ever'thing so a man didn't get enough crop to plug up an ant's ass. An' ever'body got bills at the grocery. \n\nYou know how it is. Well, the folks that owns the lan' says, We can't afford to keep no tenants.So they bring' in 'em men with tractors n push us off. All 'cept me, an' by God I ain't goin'. \n\nFunny eh? A man who walks on his lan' is the lan' n' owns the lan'. But a man who don’t walk on the lan' is a servan' of his own property."},
-    "7": {"name":"Muley Graves","content":"There's something about the land. Owning the land and feeling well when the land is doing well and feeling down when the land start to dry up and shrivel. Something 'bout feelin' the rain come down on your skin and feel it sinkin' into the crevices in the dirt. A man is something with his land, something strong, something human. Me, now, I'm prey. I'm just a weasel."},
-    "8": {"name":"Wanderer","content":"Your fambly?"},
-    "9": {"name":"Muley Graves","content":"Gone. My wife an' the kids an' her brother all took an' went to California. They wasn't nothin' to eat. They wasn't as mad as me, so they went. They wasn't nothin' to eat here"}
+    "1": {"name":"Wanderer","content": "Hey! We gotta rise up an’ revolt!"},
+    "2": {"name":"Picker","content":"Why? We’d lose our jobs. Fi’ cents a box is enough to sustain the family."},
+    "3": {"name":"Wanderer","content":"It’s only fi’ ‘cause there were protests outside, but now they’re gettin’ broken down. We gotta do somethin'!"},
+    "4": {"name":"Picker","content":"But the price they clearly say Fi’ cents a box. If I join ‘em reds I’d be riskin’ it all!"},
+    "5": {"name":"Wanderer","content":"We don’t got no choice! Once ‘em reds are gone, you can’t feed your children no more. You can’t deepen your meat no more. You can’t live no more. We get pushed, pulled, shoved ‘round like we’re nothin’! Cops cause more trouble than they stop. We can’t keep takin’ this like sittin’ ducks."},
+    "6": {"name":"Picker","content":" If you’re so passionate an’ fired up why don’t you go strike? Why you need to drag us down with you?"},
+    "7": {"name":"Wanderer","content":"‘Cause we gotta make CHANGE! ‘Em strikes don’t get enough backin’, so they fall apart. Imagine if all us pickers make a stand!\n\n What separates us from ‘em so called reds? We all gotta feed our famblies, We all gotta live, we all jus’ tryna’ get by without hurtin’ nobody. We can’t jus’ sit here while our kind suffers an’ endures for our sakes! With ‘em cops around, we’ll never get peace.\n\n If we… If we unite and support each other though… we can WIN! We’d be the ones in control. We can feed our famblies an’ share our meat! Nobody gotta suffer no more!"}
 }
+    
