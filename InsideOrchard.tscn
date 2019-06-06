@@ -11,6 +11,7 @@
 [ext_resource path="res://AudioStreamPlayer.gd" type="Script" id=9]
 
 [sub_resource type="DynamicFont" id=1]
+size = 30
 font_data = ExtResource( 7 )
 
 [node name="Node2D" type="Node2D"]
@@ -47,16 +48,16 @@ margin_right = 701.297
 margin_bottom = 665.001
 
 [node name="TextBoxTexture" type="TileMap" parent="."]
-position = Vector2( 1271.68, 527.865 )
 tile_set = ExtResource( 2 )
 format = 1
-tile_data = PoolIntArray( -262161, 13, 0, -262160, 13, 0, -262159, 13, 0, -262158, 13, 0, -262157, 13, 0, -262156, 13, 0, -262155, 13, 0, -196625, 13, 0, -196624, 13, 0, -196623, 13, 0, -196622, 13, 0, -196621, 13, 0, -196620, 13, 0, -196619, 13, 0, -131089, 13, 0, -131088, 13, 0, -131087, 13, 0, -131086, 13, 0, -131085, 13, 0, -131084, 13, 0, -131083, 13, 0, -65553, 13, 0, -65552, 13, 0, -65551, 13, 0, -65550, 13, 0, -65549, 13, 0, -65548, 13, 0, -65547, 13, 0 )
+tile_data = PoolIntArray( 131075, 13, 0, 131076, 13, 0, 131077, 13, 0, 131078, 13, 0, 131079, 13, 0, 131080, 13, 0, 131081, 13, 0, 131082, 13, 0, 131083, 13, 0, 196611, 13, 0, 196612, 13, 0, 196613, 13, 0, 196614, 13, 0, 196615, 13, 0, 196616, 13, 0, 196617, 13, 0, 196618, 13, 0, 196619, 13, 0, 262147, 13, 0, 262148, 13, 0, 262149, 13, 0, 262150, 13, 0, 262151, 13, 0, 262152, 13, 0, 262153, 13, 0, 262154, 13, 0, 262155, 13, 0, 327683, 13, 0, 327684, 13, 0, 327685, 13, 0, 327686, 13, 0, 327687, 13, 0, 327688, 13, 0, 327689, 13, 0, 327690, 13, 0, 327691, 13, 0, 524287, 13, 0 )
 
 [node name="DialogueBox" type="RichTextLabel" parent="."]
-margin_left = 197.0
-margin_top = 224.0
-margin_right = 614.0
-margin_bottom = 449.0
+margin_left = 209.31
+margin_top = 136.874
+margin_right = 878.31
+margin_bottom = 373.874
+rect_scale = Vector2( 0.8, 1 )
 custom_fonts/normal_font = SubResource( 1 )
 
 [node name="Position2D" type="Position2D" parent="."]
@@ -64,6 +65,7 @@ position = Vector2( 1271.68, 527.865 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
+volume_db = -12.0
 autoplay = true
 script = ExtResource( 9 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

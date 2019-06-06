@@ -83,5 +83,5 @@ autoplay = true
 script = ExtResource( 11 )
 
 [node name="Position2D2" type="Position2D" parent="."]
-position = Vector2( 1280, 600 )
+position = Vector2( 1279.88, 592.47 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
