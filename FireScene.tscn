@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://FireScene.gd" type="Script" id=1]
+[ext_resource path="res://GroundTileset.tres" type="TileSet" id=2]
+[ext_resource path="res://sprites/other sprites/firescene.png" type="Texture" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( -18.5039, 37.9844 )
+script = ExtResource( 1 )
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 0, -1.52588e-005 )
+tile_set = ExtResource( 2 )
+format = 1
+tile_data = PoolIntArray( 655360, 12, 0, 655361, 12, 0, 655362, 12, 0, 655363, 12, 0, 655364, 12, 0, 655365, 12, 0, 655366, 12, 0, 655367, 12, 0, 655368, 12, 0, 655369, 12, 0, 655370, 12, 0, 655371, 12, 0, 655372, 12, 0, 655373, 12, 0, 655374, 12, 0, 655375, 12, 0, 655376, 12, 0, 655377, 12, 0, 655378, 12, 0, 655379, 12, 0, 655380, 12, 0 )
+
+[node name="firescene" type="Sprite" parent="."]
+position = Vector2( 656, 320 )
+texture = ExtResource( 3 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 1309.2, 547.74 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 69.8457, 564.037 )
