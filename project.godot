@@ -16,7 +16,6 @@ _global_script_class_icons={
 [application]
 
 config/name="What Happened Here"
-run/main_scene="res://StartScene.tscn"
 config/icon="res://icon.png"
 
 [autoload]

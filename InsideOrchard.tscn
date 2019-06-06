@@ -46,11 +46,17 @@ margin_top = 651.001
 margin_right = 701.297
 margin_bottom = 665.001
 
+[node name="TextBoxTexture" type="TileMap" parent="."]
+position = Vector2( 1271.68, 527.865 )
+tile_set = ExtResource( 2 )
+format = 1
+tile_data = PoolIntArray( -262161, 13, 0, -262160, 13, 0, -262159, 13, 0, -262158, 13, 0, -262157, 13, 0, -262156, 13, 0, -262155, 13, 0, -196625, 13, 0, -196624, 13, 0, -196623, 13, 0, -196622, 13, 0, -196621, 13, 0, -196620, 13, 0, -196619, 13, 0, -131089, 13, 0, -131088, 13, 0, -131087, 13, 0, -131086, 13, 0, -131085, 13, 0, -131084, 13, 0, -131083, 13, 0, -65553, 13, 0, -65552, 13, 0, -65551, 13, 0, -65550, 13, 0, -65549, 13, 0, -65548, 13, 0, -65547, 13, 0 )
+
 [node name="DialogueBox" type="RichTextLabel" parent="."]
-margin_left = 225.836
-margin_top = 251.408
-margin_right = 894.836
-margin_bottom = 464.408
+margin_left = 197.0
+margin_top = 224.0
+margin_right = 614.0
+margin_bottom = 449.0
 custom_fonts/normal_font = SubResource( 1 )
 
 [node name="Position2D" type="Position2D" parent="."]

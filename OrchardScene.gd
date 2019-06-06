@@ -28,7 +28,8 @@ func _ready():
 func _process(delta):
 	_get_message()
 	global.pos2 = $Player.position
-	
+	if $Player.position.distance_to($Position2D2.position)<50:
+		get_tree().change_scene("res://FireScene.tscn")
 func _display_next_dialogue():
 	if dict.has(str(dialogue_counter)):
 		$DialogueBox.clear()
@@ -64,7 +65,8 @@ func _input(e):
 			if nextToProtester:
 				_display_next_dialogue()
 			elif nextToEntrance:
-				global.timeSong = 0
+				print("entering scene")
+				#global.timeSong = 0
 				get_tree().change_scene("res://InsideOrchard.tscn")
 		if $Timer.is_stopped():
 			$Timer.start()

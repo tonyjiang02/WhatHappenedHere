@@ -13,8 +13,7 @@ var dict = {}
 var dialogue_counter = 1
 var acceptInput = true
 func _ready():
-	if global.pos1:
-		$Player.position = global.pos1
+	$TextBoxTexture.hide()
 	$DialogueBox.hide()
 	file.open("res://textfiles/dialoguePicker.json", file.READ)
 	var text = file.get_as_text()
@@ -23,7 +22,6 @@ func _ready():
 	file.close()
 func _process(delta):
 	_get_Message()
-	global.pos1 = $Player.position
 	if $Player.position.distance_to($Position2D.position) < 50:
 		print("closeto")
 		get_tree().change_scene("res://OrchardScene.tscn")
@@ -31,7 +29,6 @@ func _input(e):
 	if acceptInput:
 		if Input.is_key_pressed(KEY_F):
 			if nextToPicker:
-				emit_signal("talk_picker")
 				print("talk_picker")
 				_display_next_dialogue()
 				talkingToPicker = true
@@ -51,6 +48,7 @@ func _display_next_dialogue():
 	if dict.has(str(dialogue_counter)):
 		$DialogueBox.clear()
 		$DialogueBox.show()
+		$TextBoxTexture.show()
 		var display_text = dict[str(dialogue_counter)].content
 		var speaker = dict[str(dialogue_counter)].name
 		$DialogueBox.add_text(speaker + " : " + display_text)
@@ -59,6 +57,7 @@ func _display_next_dialogue():
 		dialogue_counter = 1
 		$DialogueBox.hide()
 		$DialogueBox.clear()
+		$TextBoxTexture.hide()
 		talkingToPicker = false
 		
 

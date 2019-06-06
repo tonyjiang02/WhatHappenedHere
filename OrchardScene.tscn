@@ -81,4 +81,7 @@ one_shot = true
 stream = ExtResource( 10 )
 autoplay = true
 script = ExtResource( 11 )
+
+[node name="Position2D2" type="Position2D" parent="."]
+position = Vector2( 1280, 600 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
