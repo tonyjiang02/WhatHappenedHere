@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://OrchardScene.gd" type="Script" id=1]
 [ext_resource path="res://GroundTileset.tres" type="TileSet" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://sprites/other sprites/protestor1.png" type="Texture" id=7]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://TextFont2.tres" type="DynamicFont" id=9]
+[ext_resource path="res://bgMusic/TopEmotionalOstsOfAllTimes.ogg" type="AudioStream" id=10]
+[ext_resource path="res://AudioStreamPlayer.gd" type="Script" id=11]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -74,4 +76,9 @@ custom_colors/default_color = Color( 1, 1, 1, 1 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.3
 one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
+script = ExtResource( 11 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://DustBowlScene.gd" type="Script" id=1]
 [ext_resource path="res://Textures/background.png" type="Texture" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://MuleyGraves.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Oswald[wght].ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://bgMusic/WorldofWarcraftMusic_Ambi.ogg" type="AudioStream" id=8]
+[ext_resource path="res://AudioStreamPlayer.gd" type="Script" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 7 )
@@ -58,4 +60,9 @@ position = Vector2( 1292.65, 574.655 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.3
 one_shot = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+autoplay = true
+script = ExtResource( 9 )
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

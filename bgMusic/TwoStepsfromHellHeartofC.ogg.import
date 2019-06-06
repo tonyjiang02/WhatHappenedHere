@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/TwoStepsfromHellHeartofC.ogg-ee60f293a4875fcc5d46bb91f0f709c6.oggstr"
+
+[deps]
+
+source_file="res://bgMusic/TwoStepsfromHellHeartofC.ogg"
+dest_files=[ "res://.import/TwoStepsfromHellHeartofC.ogg-ee60f293a4875fcc5d46bb91f0f709c6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

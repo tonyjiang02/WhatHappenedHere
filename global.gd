@@ -5,6 +5,9 @@ var pos1
 var pos2
 # position in ...
 var pos3
+
+var timeSong = 0
+
 func _ready():
 	pass 
 
